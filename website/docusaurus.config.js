@@ -57,6 +57,27 @@ const siteConfig = {
   // e.g., for the https://JoelMarcey.github.io site, it would be set like...
   //   organizationName: 'JoelMarcey'
 
+  //Migration to Docusaurus 2, split each functionality (blog, docs, pages) into plugins for modularity
+  presets: [
+    [
+      '@docusaurus/preset-classic',
+      {
+        docs: {
+          //Docs folder path relative to website dir.
+          path: '../docs',
+          //Sidebars file relastive to website dir.
+          sidebarPath: require.resolve('./sidebars.json')
+        },
+        theme: {
+          customCss:[require.resolve('./src/css/custom.css')]
+        }
+      }
+    ]
+  ],
+  themeConfig: {
+    footer:
+  }
+
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     { doc: 'accordproject', label: 'Documentation' },

@@ -1,8 +1,10 @@
 {
   "scripts": {
     "examples": "docusaurus-examples",
-    "start": "docusaurus-start",
-    "build": "docusaurus-build",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
     "build:api": "./scripts/build_api_md.sh",
     "publish-gh-pages": "docusaurus-publish",
     "write-translations": "docusaurus-write-translations",
@@ -16,8 +18,9 @@
     "url": "https://github.com/accordproject/techdocs.git"
   },
   "dependencies": {
+    "@docusaurus/core": "^2.4.0",
+    "@docusaurus/preset-classic": "^2.4.0",
     "axios": "^0.21.2",
-    "docusaurus": "^1.14.7",
     "qs": "^6.9.6",
     "remarkable-admonitions": "^0.2.2"
   },
