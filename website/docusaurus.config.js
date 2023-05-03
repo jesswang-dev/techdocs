@@ -74,10 +74,6 @@ const siteConfig = {
       }
     ]
   ],
-  themeConfig: {
-    footer:
-  }
-
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
     { doc: 'accordproject', label: 'Documentation' },
